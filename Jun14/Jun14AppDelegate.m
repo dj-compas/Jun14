@@ -27,7 +27,7 @@
 	// make frames for each view
 	CGRect frame1 = CGRectMake(0, 0, defaultWidth, defaultHeight);
 	CGRect frame2 = CGRectMake(0, (frame1.origin.y + frame1.size.height), defaultWidth, defaultHeight);
-    CGRect frame3 = CGRectMake(0, (frame2.origin.y + frame2.size.height), defaultWidth, defaultHeight);
+   	CGRect frame3 = CGRectMake(0, (frame2.origin.y + frame2.size.height), defaultWidth, defaultHeight);
     
 	// define colors
 	UIColor *red = [UIColor colorWithRed:.5 green:0 blue:0 alpha:1];
