@@ -39,7 +39,7 @@
 	date = [[NSDate alloc] init];
 	
 	// instansiate views
-	View *view1 = [[View alloc] initWithFrame:frame1 andMessage:@"one" andBackgroundColor:red];
+	View *view1 = [[View alloc] initWithFrame:frame1 andMessage:@"UDID prop deprecated in iOS 5.0" andBackgroundColor:red];
 	View *view2 = [[View alloc] initWithFrame:frame2 andMessage:[NSString stringWithFormat: @"Battery: %f", device.batteryLevel] andBackgroundColor:green];
 	view3 = [[View alloc] initWithFrame:frame3 andMessage:[NSString stringWithFormat:@"%@", date] andBackgroundColor:blue];
 	
