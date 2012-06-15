@@ -52,7 +52,19 @@
 	
 	// make root view visible
 	[self.window makeKeyAndVisible];
+    
+    // define selector and update view 3 after a certain amount of seconds
+    SEL sel = @selector(updateView);
+    [self performSelector:sel withObject:nil afterDelay:(NSTimeInterval) 3];
+    
     return YES;
+}
+
+- (void) updateView
+{
+    date = [[NSDate alloc] init];
+	view3.message = [NSString stringWithFormat:@"%@", date];
+	[view3 setNeedsDisplay];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
